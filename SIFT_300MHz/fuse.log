@@ -1,0 +1,45 @@
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/xilinx_workspace/SIFT_300MHz/Sim2_isim_beh.exe -prj E:/xilinx_workspace/SIFT_300MHz/Sim2_beh.prj work.Sim2 work.glbl 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+WARNING:Simulator:1010 - One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Analyzing Verilog file "E:/xilinx_workspace/SIFT_300MHz/RAMAddrCrontrol.v" into library work
+Analyzing Verilog file "E:/xilinx_workspace/SIFT_300MHz/Keypoint.v" into library work
+Analyzing Verilog file "E:/xilinx_workspace/SIFT_300MHz/ipcore_dir/ImageRAM.v" into library work
+Analyzing Verilog file "E:/xilinx_workspace/SIFT_300MHz/ExtremaPoint.v" into library work
+Analyzing Verilog file "E:/xilinx_workspace/SIFT_300MHz/DoGUnit.v" into library work
+Analyzing Verilog file "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" into library work
+Analyzing Verilog file "E:/xilinx_workspace/SIFT_300MHz/Sim2.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 94: Size mismatch in connection of port <wea>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 96: Size mismatch in connection of port <dina>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 99: Size mismatch in connection of port <web>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 101: Size mismatch in connection of port <dinb>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 107: Size mismatch in connection of port <wea>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 109: Size mismatch in connection of port <dina>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 112: Size mismatch in connection of port <web>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 114: Size mismatch in connection of port <dinb>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 120: Size mismatch in connection of port <wea>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 122: Size mismatch in connection of port <dina>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 124: Size mismatch in connection of port <clkb>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 125: Size mismatch in connection of port <web>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 126: Size mismatch in connection of port <addrb>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "E:/xilinx_workspace/SIFT_300MHz/KeypointTop.v" Line 127: Size mismatch in connection of port <dinb>. Formal port size is 8-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module RAMAddrControl_Parallel_5
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="virte...
+Compiling module ImageRAM
+Compiling module DoGUnit
+Compiling module ExtremaPointMatrix
+Compiling module Keypoint
+Compiling module KeypointTop
+Compiling module Sim2
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+ERROR:Simulator:861 - Failed to link the design

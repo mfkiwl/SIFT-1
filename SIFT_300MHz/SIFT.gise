@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="SIFT.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ExtremaPoint.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ExtremaPoint.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ExtremaPoint.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ExtremaPoint.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ExtremaPoint.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ExtremaPoint.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ExtremaPoint.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ExtremaPoint.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ExtremaPoint_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ExtremaPoint_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ExtremaPoint_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Keypoint.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Keypoint.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Keypoint.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Keypoint.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Keypoint.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Keypoint.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Keypoint.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Keypoint.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="KeypointTop.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="KeypointTop.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="KeypointTop.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="KeypointTop.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="KeypointTop.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="KeypointTop.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="KeypointTop.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="KeypointTop.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="KeypointTop_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="KeypointTop_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="KeypointTop_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Keypoint_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sim1_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Sim1_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Sim1_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sim2_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Sim2_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Sim2_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sim2_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ipcore_dir/ImageRAM.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ipcore_dir/ImageRAM.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="ipcore_dir/ImageRAM.v" xil_pn:origination="imported">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1460445989" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1460445989">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460445989" xil_pn:in_ck="5943186554251170228" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1460445989">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="DoGUnit.v"/>
+      <outfile xil_pn:name="ExtremaPoint.v"/>
+      <outfile xil_pn:name="Keypoint.v"/>
+      <outfile xil_pn:name="KeypointTop.v"/>
+      <outfile xil_pn:name="RAMAddrCrontrol.v"/>
+      <outfile xil_pn:name="Sim2.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1460445989" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2528744770051299122" xil_pn:start_ts="1460445989">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460445989" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7501318661414523632" xil_pn:start_ts="1460445989">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460445989" xil_pn:in_ck="427043348290830314" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1536786949923369179" xil_pn:start_ts="1460445989">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/ImageRAM.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/ImageRAM.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1460445989" xil_pn:in_ck="6126924321491996394" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1460445989">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="DoGUnit.v"/>
+      <outfile xil_pn:name="ExtremaPoint.v"/>
+      <outfile xil_pn:name="Keypoint.v"/>
+      <outfile xil_pn:name="KeypointTop.v"/>
+      <outfile xil_pn:name="RAMAddrCrontrol.v"/>
+      <outfile xil_pn:name="Sim2.v"/>
+      <outfile xil_pn:name="ipcore_dir/ImageRAM.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1460445993" xil_pn:in_ck="6126924321491996394" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7603371657850951107" xil_pn:start_ts="1460445989">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1458865663" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1458865663">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1458865663" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-4407512941439466117" xil_pn:start_ts="1458865663">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1458865663" xil_pn:in_ck="427043348290830314" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-1536786949923369179" xil_pn:start_ts="1458865663">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/ImageRAM.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/ImageRAM.v"/>
+    </transform>
+    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1458865663" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1295970426569686979" xil_pn:start_ts="1458865663">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1458865663" xil_pn:in_ck="-4354313580112144487" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="116432373134593904" xil_pn:start_ts="1458865663">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1458865663" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="622956576802366063" xil_pn:start_ts="1458865663">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1458866196" xil_pn:in_ck="3220726635912705099" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4797633141137823316" xil_pn:start_ts="1458865663">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ExtremaPoint.ngr"/>
+      <outfile xil_pn:name="Keypoint.ngr"/>
+      <outfile xil_pn:name="KeypointTop.lso"/>
+      <outfile xil_pn:name="KeypointTop.ngc"/>
+      <outfile xil_pn:name="KeypointTop.ngr"/>
+      <outfile xil_pn:name="KeypointTop.prj"/>
+      <outfile xil_pn:name="KeypointTop.stx"/>
+      <outfile xil_pn:name="KeypointTop.syr"/>
+      <outfile xil_pn:name="KeypointTop.xst"/>
+      <outfile xil_pn:name="KeypointTop_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

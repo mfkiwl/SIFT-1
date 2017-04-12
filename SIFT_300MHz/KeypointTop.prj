@@ -1,0 +1,6 @@
+verilog work "RAMAddrCrontrol.v"
+verilog work "Keypoint.v"
+verilog work "ipcore_dir/ImageRAM.v"
+verilog work "ExtremaPoint.v"
+verilog work "DoGUnit.v"
+verilog work "KeypointTop.v"

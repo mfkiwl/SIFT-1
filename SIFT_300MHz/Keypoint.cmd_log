@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Xilinx/ISE_Workspace/SIFT/Keypoint.xst" -ofn "C:/Xilinx/ISE_Workspace/SIFT/Keypoint.syr" 

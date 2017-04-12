@@ -1,0 +1,924 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: KeypointTop.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "KeypointTop.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "KeypointTop"
+Output Format                      : NGC
+Target Device                      : xc6slx100t-2-fgg484
+
+---- Source Options
+Top Module Name                    : KeypointTop
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" into library work
+Parsing module <RAMAddrControl_Parallel_5>.
+Analyzing Verilog file "C:\Xilinx\ISE_Workspace\SIFT_TEST\Keypoint.v" into library work
+Parsing module <Keypoint>.
+Analyzing Verilog file "C:\Xilinx\ISE_Workspace\SIFT_TEST\ipcore_dir\ImageRAM.v" into library work
+Parsing module <ImageRAM>.
+Analyzing Verilog file "C:\Xilinx\ISE_Workspace\SIFT_TEST\ExtremaPoint.v" into library work
+Parsing module <ExtremaPointMatrix>.
+Analyzing Verilog file "C:\Xilinx\ISE_Workspace\SIFT_TEST\DoGUnit.v" into library work
+Parsing module <DoGUnit>.
+Analyzing Verilog file "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" into library work
+Parsing module <KeypointTop>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <KeypointTop>.
+
+Elaborating module <RAMAddrControl_Parallel_5>.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 75: Result of 18-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 76: Result of 19-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 77: Result of 19-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 78: Result of 19-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 79: Result of 19-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 83: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 84: Result of 18-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 85: Result of 18-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 86: Result of 18-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 87: Result of 18-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 91: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 99: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 104: Result of 18-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 105: Result of 19-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 106: Result of 19-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 107: Result of 19-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 108: Result of 19-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 112: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 113: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 114: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 115: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v" Line 116: Result of 32-bit expression is truncated to fit in 16-bit target.
+
+Elaborating module <ImageRAM>.
+WARNING:HDLCompiler:1499 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\ipcore_dir\ImageRAM.v" Line 39: Empty module <ImageRAM> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 94: Size mismatch in connection of port <wea>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 96: Size mismatch in connection of port <dina>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 99: Size mismatch in connection of port <web>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 101: Size mismatch in connection of port <dinb>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 107: Size mismatch in connection of port <wea>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 109: Size mismatch in connection of port <dina>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 112: Size mismatch in connection of port <web>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 114: Size mismatch in connection of port <dinb>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 120: Size mismatch in connection of port <wea>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 122: Size mismatch in connection of port <dina>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 124: Size mismatch in connection of port <clkb>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 125: Size mismatch in connection of port <web>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 126: Size mismatch in connection of port <addrb>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 127: Size mismatch in connection of port <dinb>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" Line 128: Assignment to data ignored, since the identifier is never used
+
+Elaborating module <DoGUnit>.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\DoGUnit.v" Line 188: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <ExtremaPointMatrix>.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\ExtremaPoint.v" Line 168: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <Keypoint>.
+WARNING:HDLCompiler:413 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\Keypoint.v" Line 47: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <KeypointTop>.
+    Related source file is "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v".
+INFO:Xst:3210 - "C:\Xilinx\ISE_Workspace\SIFT_TEST\KeypointTop.v" line 118: Output port <doutb> of the instance <ImageRAM3> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <KeypointTop> synthesized.
+
+Synthesizing Unit <RAMAddrControl_Parallel_5>.
+    Related source file is "C:\Xilinx\ISE_Workspace\SIFT_TEST\RAMAddrCrontrol.v".
+        Iwidth = 256
+        Ilength = 256
+        DoGwidth = 251
+        DoGlength = 251
+    Found 8-bit register for signal <Xout>.
+    Found 8-bit register for signal <Yout>.
+    Found 8-bit register for signal <y>.
+    Found 8-bit register for signal <x>.
+    Found 16-bit register for signal <addr1>.
+    Found 16-bit register for signal <addr2>.
+    Found 16-bit register for signal <addr3>.
+    Found 16-bit register for signal <addr4>.
+    Found 16-bit register for signal <addr5>.
+    Found 1-bit register for signal <direction>.
+    Found 1-bit register for signal <Directionout>.
+    Found 17-bit subtractor for signal <GND_2_o_GND_2_o_sub_59_OUT> created at line 112.
+    Found 18-bit subtractor for signal <GND_2_o_GND_2_o_sub_63_OUT> created at line 113.
+    Found 18-bit subtractor for signal <GND_2_o_GND_2_o_sub_67_OUT> created at line 114.
+    Found 18-bit subtractor for signal <GND_2_o_GND_2_o_sub_71_OUT> created at line 115.
+    Found 18-bit subtractor for signal <GND_2_o_GND_2_o_sub_75_OUT> created at line 116.
+    Found 18-bit adder for signal <n0208> created at line 75.
+    Found 18-bit adder for signal <n0091> created at line 76.
+    Found 18-bit adder for signal <n0092> created at line 77.
+    Found 18-bit adder for signal <n0093> created at line 78.
+    Found 18-bit adder for signal <n0094> created at line 79.
+    Found 9-bit adder for signal <n0217[8:0]> created at line 83.
+    Found 17-bit adder for signal <n0096> created at line 84.
+    Found 17-bit adder for signal <n0097> created at line 85.
+    Found 17-bit adder for signal <n0098> created at line 86.
+    Found 17-bit adder for signal <n0099> created at line 87.
+    Found 8-bit adder for signal <x[7]_GND_2_o_add_43_OUT> created at line 99.
+    Found 17-bit adder for signal <n0231> created at line 104.
+    Found 17-bit adder for signal <n0113> created at line 104.
+    Found 18-bit adder for signal <n0236> created at line 105.
+    Found 18-bit adder for signal <n0115> created at line 105.
+    Found 18-bit adder for signal <n0241> created at line 106.
+    Found 18-bit adder for signal <n0117> created at line 106.
+    Found 18-bit adder for signal <n0246> created at line 107.
+    Found 18-bit adder for signal <n0119> created at line 107.
+    Found 18-bit adder for signal <n0251> created at line 108.
+    Found 18-bit adder for signal <n0121> created at line 108.
+    Found 32-bit adder for signal <GND_2_o_GND_2_o_add_59_OUT> created at line 112.
+    Found 9-bit adder for signal <n0256[8:0]> created at line 113.
+    Found 32-bit adder for signal <GND_2_o_GND_2_o_add_63_OUT> created at line 113.
+    Found 9-bit adder for signal <n0260[8:0]> created at line 114.
+    Found 32-bit adder for signal <GND_2_o_GND_2_o_add_67_OUT> created at line 114.
+    Found 9-bit adder for signal <n0264[8:0]> created at line 115.
+    Found 32-bit adder for signal <GND_2_o_GND_2_o_add_71_OUT> created at line 115.
+    Found 9-bit adder for signal <n0268[8:0]> created at line 116.
+    Found 32-bit adder for signal <GND_2_o_GND_2_o_add_75_OUT> created at line 116.
+    Found 16-bit subtractor for signal <GND_2_o_GND_2_o_sub_61_OUT<15:0>> created at line 112.
+    Found 16-bit subtractor for signal <GND_2_o_GND_2_o_sub_65_OUT<15:0>> created at line 113.
+    Found 16-bit subtractor for signal <GND_2_o_GND_2_o_sub_69_OUT<15:0>> created at line 114.
+    Found 16-bit subtractor for signal <GND_2_o_GND_2_o_sub_73_OUT<15:0>> created at line 115.
+    Found 16-bit subtractor for signal <GND_2_o_GND_2_o_sub_77_OUT<15:0>> created at line 116.
+    Found 8-bit comparator greater for signal <y[7]_PWR_2_o_LessThan_41_o> created at line 90
+    Summary:
+	inferred  40 Adder/Subtractor(s).
+	inferred 114 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  17 Multiplexer(s).
+Unit <RAMAddrControl_Parallel_5> synthesized.
+
+Synthesizing Unit <DoGUnit>.
+    Related source file is "C:\Xilinx\ISE_Workspace\SIFT_TEST\DoGUnit.v".
+        DoGwidth = 251
+    Found 10-bit register for signal <product1_2>.
+    Found 10-bit register for signal <product4_1>.
+    Found 10-bit register for signal <product2_5>.
+    Found 10-bit register for signal <product1_4>.
+    Found 10-bit register for signal <product5_4>.
+    Found 10-bit register for signal <product2_1>.
+    Found 10-bit register for signal <product4_5>.
+    Found 10-bit register for signal <product5_2>.
+    Found 15-bit register for signal <product5_1>.
+    Found 15-bit register for signal <product1_5>.
+    Found 15-bit register for signal <product5_5>.
+    Found 15-bit register for signal <product1_1>.
+    Found 16-bit register for signal <product3_5>.
+    Found 16-bit register for signal <product3_1>.
+    Found 16-bit register for signal <product1_3>.
+    Found 16-bit register for signal <product5_3>.
+    Found 11-bit register for signal <product3_4>.
+    Found 11-bit register for signal <product3_2>.
+    Found 11-bit register for signal <product2_3>.
+    Found 11-bit register for signal <product4_3>.
+    Found 8-bit register for signal <x>.
+    Found 8-bit register for signal <y>.
+    Found 8-bit register for signal <x1>.
+    Found 8-bit register for signal <y1>.
+    Found 8-bit register for signal <x2>.
+    Found 8-bit register for signal <y2>.
+    Found 8-bit register for signal <Xout>.
+    Found 8-bit register for signal <Yout>.
+    Found 2-bit register for signal <clk_div>.
+    Found 8-bit register for signal <ImageReg1_2>.
+    Found 8-bit register for signal <ImageReg2_2>.
+    Found 8-bit register for signal <ImageReg3_4>.
+    Found 8-bit register for signal <ImageReg3_5>.
+    Found 8-bit register for signal <ImageReg1_3>.
+    Found 8-bit register for signal <ImageReg1_4>.
+    Found 8-bit register for signal <ImageReg2_3>.
+    Found 8-bit register for signal <ImageReg2_4>.
+    Found 8-bit register for signal <ImageReg3_2>.
+    Found 8-bit register for signal <ImageReg1_1>.
+    Found 8-bit register for signal <ImageReg1_5>.
+    Found 8-bit register for signal <ImageReg2_1>.
+    Found 8-bit register for signal <ImageReg3_1>.
+    Found 8-bit register for signal <ImageReg2_5>.
+    Found 8-bit register for signal <ImageReg3_3>.
+    Found 8-bit register for signal <ImageReg4_1>.
+    Found 8-bit register for signal <ImageReg4_4>.
+    Found 8-bit register for signal <ImageReg4_5>.
+    Found 8-bit register for signal <ImageReg4_2>.
+    Found 8-bit register for signal <ImageReg4_3>.
+    Found 8-bit register for signal <ImageReg5_5>.
+    Found 8-bit register for signal <ImageReg5_1>.
+    Found 8-bit register for signal <ImageReg5_2>.
+    Found 8-bit register for signal <ImageReg5_3>.
+    Found 8-bit register for signal <ImageReg5_4>.
+    Found 17-bit register for signal <product3_3>.
+    Found 17-bit register for signal <sum_product1>.
+    Found 17-bit register for signal <sum_product2>.
+    Found 17-bit register for signal <sum_product3>.
+    Found 17-bit register for signal <sum_product4>.
+    Found 17-bit register for signal <sum_product5>.
+    Found 17-bit register for signal <DoG>.
+    Found 1-bit register for signal <direction1>.
+    Found 1-bit register for signal <direction2>.
+    Found 1-bit register for signal <Directionout>.
+    Found 1-bit register for signal <direction>.
+    Found 17-bit subtractor for signal <sum_product3[16]_sum_product1[16]_sub_218_OUT> created at line 417.
+    Found 17-bit subtractor for signal <sum_product3[16]_sum_product2[16]_sub_219_OUT> created at line 417.
+    Found 2-bit adder for signal <clk_div[1]_GND_4_o_add_14_OUT> created at line 188.
+    Found 17-bit adder for signal <n0543> created at line 397.
+    Found 17-bit adder for signal <n0546> created at line 397.
+    Found 17-bit adder for signal <product1_3[16]_product5_3[16]_add_195_OUT> created at line 397.
+    Found 17-bit adder for signal <n0552> created at line 398.
+    Found 17-bit adder for signal <n0555> created at line 398.
+    Found 17-bit adder for signal <product2_3[16]_product4_3[16]_add_198_OUT> created at line 398.
+    Found 17-bit adder for signal <n0561> created at line 399.
+    Found 17-bit adder for signal <n0564> created at line 399.
+    Found 17-bit adder for signal <n0567> created at line 399.
+    Found 17-bit adder for signal <product1_2[16]_product4_1[16]_add_202_OUT> created at line 399.
+    Found 17-bit adder for signal <n0573> created at line 400.
+    Found 17-bit adder for signal <n0576> created at line 400.
+    Found 17-bit adder for signal <product4_5[16]_product3_3[16]_add_205_OUT> created at line 400.
+    Found 17-bit adder for signal <n0582> created at line 401.
+    Found 17-bit adder for signal <n0585> created at line 401.
+    Found 17-bit adder for signal <product1_1[16]_product5_5[16]_add_208_OUT> created at line 401.
+    Found 17-bit adder for signal <n0591> created at line 417.
+    Found 17-bit adder for signal <sum_product3[16]_sum_product5[16]_add_216_OUT> created at line 417.
+    Found 9x8-bit multiplier for signal <PWR_7_o_ImageReg3_3[7]_MuLt_150_OUT> created at line 357.
+    Found 8x8-bit multiplier for signal <PWR_7_o_ImageReg1_3[7]_MuLt_151_OUT> created at line 358.
+    Found 8x8-bit multiplier for signal <PWR_7_o_ImageReg3_1[7]_MuLt_152_OUT> created at line 359.
+    Found 8x8-bit multiplier for signal <PWR_7_o_ImageReg3_5[7]_MuLt_153_OUT> created at line 360.
+    Found 8x8-bit multiplier for signal <PWR_7_o_ImageReg5_3[7]_MuLt_154_OUT> created at line 361.
+    Found 3x8-bit multiplier for signal <PWR_7_o_ImageReg2_3[7]_MuLt_155_OUT> created at line 363.
+    Found 3x8-bit multiplier for signal <PWR_7_o_ImageReg3_2[7]_MuLt_156_OUT> created at line 364.
+    Found 3x8-bit multiplier for signal <PWR_7_o_ImageReg3_4[7]_MuLt_157_OUT> created at line 365.
+    Found 3x8-bit multiplier for signal <PWR_7_o_ImageReg4_3[7]_MuLt_158_OUT> created at line 366.
+    Found 2x8-bit multiplier for signal <PWR_7_o_ImageReg1_2[7]_MuLt_159_OUT> created at line 368.
+    Found 2x8-bit multiplier for signal <PWR_7_o_ImageReg1_4[7]_MuLt_160_OUT> created at line 369.
+    Found 2x8-bit multiplier for signal <PWR_7_o_ImageReg2_1[7]_MuLt_161_OUT> created at line 370.
+    Found 2x8-bit multiplier for signal <PWR_7_o_ImageReg2_5[7]_MuLt_162_OUT> created at line 371.
+    Found 2x8-bit multiplier for signal <PWR_7_o_ImageReg4_1[7]_MuLt_163_OUT> created at line 372.
+    Found 2x8-bit multiplier for signal <PWR_7_o_ImageReg4_5[7]_MuLt_164_OUT> created at line 373.
+    Found 2x8-bit multiplier for signal <PWR_7_o_ImageReg5_2[7]_MuLt_165_OUT> created at line 374.
+    Found 2x8-bit multiplier for signal <PWR_7_o_ImageReg5_4[7]_MuLt_166_OUT> created at line 375.
+    Found 7x8-bit multiplier for signal <PWR_7_o_ImageReg1_1[7]_MuLt_167_OUT> created at line 377.
+    Found 7x8-bit multiplier for signal <PWR_7_o_ImageReg1_5[7]_MuLt_168_OUT> created at line 378.
+    Found 7x8-bit multiplier for signal <PWR_7_o_ImageReg5_1[7]_MuLt_169_OUT> created at line 379.
+    Found 7x8-bit multiplier for signal <PWR_7_o_ImageReg5_5[7]_MuLt_170_OUT> created at line 380.
+    Found 2-bit comparator greater for signal <PWR_7_o_clk_div[1]_LessThan_14_o> created at line 185
+    Found 2-bit comparator greater for signal <GND_4_o_clk_div[1]_LessThan_19_o> created at line 227
+    Found 8-bit comparator greater for signal <x[7]_PWR_7_o_LessThan_24_o> created at line 293
+    WARNING:Xst:2404 -  FFs/Latches <product1_2<16:10>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product5_1<16:15>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product4_1<16:10>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product1_5<16:15>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product3_5<16:16>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product3_4<16:11>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product3_1<16:16>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product5_5<16:15>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product2_5<16:10>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product3_2<16:11>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product1_4<16:10>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product5_4<16:10>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product2_1<16:10>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product1_1<16:15>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product2_3<16:11>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product1_3<16:16>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product4_3<16:11>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product4_5<16:10>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product5_3<16:16>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    WARNING:Xst:2404 -  FFs/Latches <product5_2<16:10>> (without init value) have a constant value of 0 in block <DoGUnit>.
+    Summary:
+	inferred  21 Multiplier(s).
+	inferred  21 Adder/Subtractor(s).
+	inferred 637 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  50 Multiplexer(s).
+Unit <DoGUnit> synthesized.
+
+Synthesizing Unit <ExtremaPointMatrix>.
+    Related source file is "C:\Xilinx\ISE_Workspace\SIFT_TEST\ExtremaPoint.v".
+        DoGwidth = 251
+WARNING:Xst:647 - Input <Yin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Directionin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 17-bit register for signal <DoG_1_1>.
+    Found 17-bit register for signal <DoG_1_2>.
+    Found 17-bit register for signal <DoG_1_3>.
+    Found 17-bit register for signal <DoG_2_1>.
+    Found 17-bit register for signal <DoG_2_2>.
+    Found 17-bit register for signal <DoG_2_3>.
+    Found 17-bit register for signal <DoG_3_1>.
+    Found 17-bit register for signal <DoG_3_2>.
+    Found 17-bit register for signal <DoG_3_3>.
+    Found 3-bit register for signal <row1>.
+    Found 4284-bit register for signal <n1345[4283:0]>.
+    Found 4284-bit register for signal <n1346[4283:0]>.
+    Found 4284-bit register for signal <n1347[4283:0]>.
+    Found 4284-bit register for signal <n1348[4283:0]>.
+    Found 9-bit subtractor for signal <GND_11_o_GND_11_o_sub_1350_OUT> created at line 148.
+    Found 8-bit adder for signal <Xin[7]_GND_11_o_add_256_OUT> created at line 86.
+    Found 8-bit adder for signal <Xin[7]_GND_11_o_add_258_OUT> created at line 87.
+    Found 3-bit adder for signal <row1[2]_GND_11_o_add_2123_OUT> created at line 168.
+    Found 17-bit 252-to-1 multiplexer for signal <Xin[7]_X_5_o_wide_mux_255_OUT> created at line 85.
+    Found 17-bit 252-to-1 multiplexer for signal <Xin[7]_X_5_o_wide_mux_257_OUT> created at line 86.
+    Found 17-bit 252-to-1 multiplexer for signal <Xin[7]_X_5_o_wide_mux_259_OUT> created at line 87.
+    Found 17-bit 252-to-1 multiplexer for signal <Xin[7]_X_5_o_wide_mux_525_OUT> created at line 100.
+    Found 17-bit 252-to-1 multiplexer for signal <Xin[7]_X_5_o_wide_mux_527_OUT> created at line 101.
+    Found 17-bit 252-to-1 multiplexer for signal <Xin[7]_X_5_o_wide_mux_529_OUT> created at line 102.
+    Found 17-bit 252-to-1 multiplexer for signal <Xin[7]_X_5_o_wide_mux_793_OUT> created at line 115.
+    Found 17-bit 252-to-1 multiplexer for signal <Xin[7]_X_5_o_wide_mux_795_OUT> created at line 116.
+    Found 17-bit 252-to-1 multiplexer for signal <Xin[7]_X_5_o_wide_mux_797_OUT> created at line 117.
+    Found 17-bit 252-to-1 multiplexer for signal <Xin[7]_X_5_o_wide_mux_1063_OUT> created at line 130.
+    Found 17-bit 252-to-1 multiplexer for signal <Xin[7]_X_5_o_wide_mux_1065_OUT> created at line 131.
+    Found 17-bit 252-to-1 multiplexer for signal <Xin[7]_X_5_o_wide_mux_1067_OUT> created at line 132.
+    Found 17-bit 4-to-1 multiplexer for signal <_n2445> created at line 81.
+    Found 17-bit 4-to-1 multiplexer for signal <_n2455> created at line 81.
+    Found 17-bit 4-to-1 multiplexer for signal <_n2464> created at line 81.
+    Found 17-bit 4-to-1 multiplexer for signal <_n2473> created at line 81.
+    Found 17-bit 4-to-1 multiplexer for signal <_n2482> created at line 81.
+    Found 17-bit 4-to-1 multiplexer for signal <_n2491> created at line 81.
+    Found 17-bit 4-to-1 multiplexer for signal <_n2501> created at line 81.
+    Found 17-bit 4-to-1 multiplexer for signal <_n2510> created at line 81.
+    Found 17-bit 4-to-1 multiplexer for signal <_n2519> created at line 81.
+    Found 8-bit comparator greater for signal <Xin[7]_PWR_8_o_LessThan_2_o> created at line 79
+    Found 32-bit comparator lessequal for signal <n0285> created at line 148
+    Found 3-bit comparator greater for signal <row1[2]_GND_11_o_LessThan_2123_o> created at line 167
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 17292 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred 1039 Multiplexer(s).
+Unit <ExtremaPointMatrix> synthesized.
+
+Synthesizing Unit <Keypoint>.
+    Related source file is "C:\Xilinx\ISE_Workspace\SIFT_TEST\Keypoint.v".
+    Found 1-bit register for signal <keypoint>.
+    Found 32-bit comparator greater for signal <DoG_2_2[16]_GND_12_o_LessThan_10_o> created at line 56
+    Found 17-bit comparator greater for signal <DoG_2_2[16]_DoG_1_1[16]_LessThan_11_o> created at line 56
+    Found 17-bit comparator greater for signal <DoG_2_2[16]_DoG_1_2[16]_LessThan_12_o> created at line 56
+    Found 17-bit comparator greater for signal <DoG_2_2[16]_DoG_1_3[16]_LessThan_13_o> created at line 56
+    Found 17-bit comparator greater for signal <DoG_2_2[16]_DoG_2_1[16]_LessThan_14_o> created at line 56
+    Found 17-bit comparator greater for signal <DoG_2_2[16]_DoG_2_3[16]_LessThan_15_o> created at line 56
+    Found 17-bit comparator greater for signal <DoG_2_2[16]_DoG_3_1[16]_LessThan_16_o> created at line 56
+    Found 17-bit comparator greater for signal <DoG_2_2[16]_DoG_3_2[16]_LessThan_17_o> created at line 56
+    Found 17-bit comparator greater for signal <DoG_2_2[16]_DoG_3_3[16]_LessThan_18_o> created at line 56
+    Found 32-bit comparator greater for signal <PWR_11_o_DoG_2_2[16]_LessThan_19_o> created at line 57
+    Found 17-bit comparator greater for signal <DoG_1_1[16]_DoG_2_2[16]_LessThan_20_o> created at line 57
+    Found 17-bit comparator greater for signal <DoG_1_2[16]_DoG_2_2[16]_LessThan_21_o> created at line 57
+    Found 17-bit comparator greater for signal <DoG_1_3[16]_DoG_2_2[16]_LessThan_22_o> created at line 57
+    Found 17-bit comparator greater for signal <DoG_2_1[16]_DoG_2_2[16]_LessThan_23_o> created at line 57
+    Found 17-bit comparator greater for signal <DoG_2_3[16]_DoG_2_2[16]_LessThan_24_o> created at line 57
+    Found 17-bit comparator greater for signal <DoG_3_1[16]_DoG_2_2[16]_LessThan_25_o> created at line 57
+    Found 17-bit comparator greater for signal <DoG_3_2[16]_DoG_2_2[16]_LessThan_26_o> created at line 57
+    Found 17-bit comparator greater for signal <DoG_3_3[16]_DoG_2_2[16]_LessThan_27_o> created at line 57
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred  18 Comparator(s).
+Unit <Keypoint> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 21
+ 8x2-bit multiplier                                    : 8
+ 8x3-bit multiplier                                    : 4
+ 8x7-bit multiplier                                    : 4
+ 8x8-bit multiplier                                    : 4
+ 9x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 65
+ 16-bit subtractor                                     : 5
+ 17-bit adder                                          : 24
+ 17-bit subtractor                                     : 3
+ 18-bit adder                                          : 13
+ 18-bit subtractor                                     : 4
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 5
+ 8-bit adder                                           : 3
+ 9-bit adder                                           : 5
+ 9-bit subtractor                                      : 1
+# Registers                                            : 91
+ 1-bit register                                        : 7
+ 10-bit register                                       : 8
+ 11-bit register                                       : 4
+ 15-bit register                                       : 4
+ 16-bit register                                       : 9
+ 17-bit register                                       : 16
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 4284-bit register                                     : 4
+ 8-bit register                                        : 37
+# Comparators                                          : 25
+ 17-bit comparator greater                             : 16
+ 2-bit comparator greater                              : 2
+ 3-bit comparator greater                              : 1
+ 32-bit comparator greater                             : 2
+ 32-bit comparator lessequal                           : 1
+ 8-bit comparator greater                              : 3
+# Multiplexers                                         : 1106
+ 16-bit 2-to-1 multiplexer                             : 15
+ 17-bit 2-to-1 multiplexer                             : 1017
+ 17-bit 252-to-1 multiplexer                           : 12
+ 17-bit 4-to-1 multiplexer                             : 9
+ 3-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 52
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/ImageRAM.ngc>.
+Loading core <ImageRAM> for timing and area information for instance <ImageRAM1>.
+Loading core <ImageRAM> for timing and area information for instance <ImageRAM2>.
+Loading core <ImageRAM> for timing and area information for instance <ImageRAM3>.
+
+Synthesizing (advanced) Unit <DoGUnit>.
+The following registers are absorbed into counter <clk_div>: 1 register on signal <clk_div>.
+	The following adders/subtractors are grouped into adder tree <Msub_sum_product3[16]_sum_product2[16]_sub_219_OUT1> :
+ 	<Madd_n0591> in block <DoGUnit>, 	<Madd_sum_product3[16]_sum_product5[16]_add_216_OUT> in block <DoGUnit>, 	<Msub_sum_product3[16]_sum_product1[16]_sub_218_OUT> in block <DoGUnit>, 	<Msub_sum_product3[16]_sum_product2[16]_sub_219_OUT> in block <DoGUnit>.
+	The following adders/subtractors are grouped into adder tree <Madd_product1_2[16]_product4_1[16]_add_202_OUT1> :
+ 	<Madd_n0561> in block <DoGUnit>, 	<Madd_n0564> in block <DoGUnit>, 	<Madd_n0567> in block <DoGUnit>, 	<Madd_product1_2[16]_product4_1[16]_add_202_OUT> in block <DoGUnit>.
+	The following adders/subtractors are grouped into adder tree <Madd_product1_1[16]_product5_5[16]_add_208_OUT1> :
+ 	<Madd_n0582> in block <DoGUnit>, 	<Madd_n0585> in block <DoGUnit>, 	<Madd_product1_1[16]_product5_5[16]_add_208_OUT> in block <DoGUnit>.
+	The following adders/subtractors are grouped into adder tree <Madd_product1_3[16]_product5_3[16]_add_195_OUT1> :
+ 	<Madd_n0543> in block <DoGUnit>, 	<Madd_n0546> in block <DoGUnit>, 	<Madd_product1_3[16]_product5_3[16]_add_195_OUT> in block <DoGUnit>.
+	The following adders/subtractors are grouped into adder tree <Madd_product2_3[16]_product4_3[16]_add_198_OUT1> :
+ 	<Madd_n0552> in block <DoGUnit>, 	<Madd_n0555> in block <DoGUnit>, 	<Madd_product2_3[16]_product4_3[16]_add_198_OUT> in block <DoGUnit>.
+	The following adders/subtractors are grouped into adder tree <Madd_product4_5[16]_product3_3[16]_add_205_OUT1> :
+ 	<Madd_n0573> in block <DoGUnit>, 	<Madd_n0576> in block <DoGUnit>, 	<Madd_product4_5[16]_product3_3[16]_add_205_OUT> in block <DoGUnit>.
+Unit <DoGUnit> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ExtremaPointMatrix>.
+The following registers are absorbed into counter <row1>: 1 register on signal <row1>.
+Unit <ExtremaPointMatrix> synthesized (advanced).
+
+Synthesizing (advanced) Unit <RAMAddrControl_Parallel_5>.
+The following registers are absorbed into counter <x>: 1 register on signal <x>.
+Unit <RAMAddrControl_Parallel_5> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 21
+ 8x2-bit multiplier                                    : 8
+ 8x3-bit multiplier                                    : 4
+ 8x7-bit multiplier                                    : 4
+ 8x8-bit multiplier                                    : 4
+ 9x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 42
+ 16-bit adder                                          : 24
+ 16-bit subtractor                                     : 10
+ 8-bit adder                                           : 7
+ 9-bit subtractor                                      : 1
+# Adder Trees                                          : 6
+ 17-bit / 4-inputs adder tree                          : 4
+ 17-bit / 5-inputs adder tree                          : 2
+# Counters                                             : 3
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 18031
+ Flip-Flops                                            : 18031
+# Comparators                                          : 25
+ 17-bit comparator greater                             : 16
+ 2-bit comparator greater                              : 2
+ 3-bit comparator greater                              : 1
+ 32-bit comparator greater                             : 2
+ 32-bit comparator lessequal                           : 1
+ 8-bit comparator greater                              : 3
+# Multiplexers                                         : 1118
+ 1-bit 2-to-1 multiplexer                              : 16
+ 16-bit 2-to-1 multiplexer                             : 15
+ 17-bit 2-to-1 multiplexer                             : 1017
+ 17-bit 252-to-1 multiplexer                           : 12
+ 17-bit 4-to-1 multiplexer                             : 9
+ 8-bit 2-to-1 multiplexer                              : 49
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <sum_product3_13> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_product3_14> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_product3_15> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_product3_16> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <product5_1_0> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <product5_5_0> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <product3_3_0> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <product3_3_1> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <product1_5_0> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_product2_13> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_product2_14> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_product2_15> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_product2_16> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <product1_1_0> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_product5_0> (without init value) has a constant value of 0 in block <DoGUnit>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <KeypointTop> ...
+
+Optimizing unit <RAMAddrControl_Parallel_5> ...
+
+Optimizing unit <DoGUnit> ...
+
+Optimizing unit <ExtremaPointMatrix> ...
+WARNING:Xst:1710 - FF/Latch <row1_2> (without init value) has a constant value of 0 in block <ExtremaPointMatrix>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Keypoint> ...
+WARNING:Xst:2677 - Node <Addr/Yout_7> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <Addr/Yout_6> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <Addr/Yout_5> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <Addr/Yout_4> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <Addr/Yout_3> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <Addr/Yout_2> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <Addr/Yout_1> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <Addr/Yout_0> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/Directionout> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/Yout_7> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/Yout_6> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/Yout_5> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/Yout_4> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/Yout_3> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/Yout_2> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/Yout_1> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/Yout_0> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/direction2> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y2_7> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y2_6> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y2_5> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y2_4> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y2_3> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y2_2> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y2_1> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y2_0> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/direction1> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y1_7> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y1_6> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y1_5> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y1_4> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y1_3> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y1_2> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y1_1> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y1_0> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y_7> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y_6> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y_5> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y_4> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y_3> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y_2> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y_1> of sequential type is unconnected in block <KeypointTop>.
+WARNING:Xst:2677 - Node <DoGU/y_0> of sequential type is unconnected in block <KeypointTop>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block KeypointTop, actual ratio is 95.
+WARNING:Xst:2957 - There are clock and non-clock loads on clock signal clk_BUFGP. This is not a recommended design practice, that may cause excessive delay, skew or unroutable situations.
+FlipFlop Addr/x_3 has been replicated 1 time(s)
+FlipFlop Addr/x_4 has been replicated 1 time(s)
+FlipFlop DoGU/Xout_0 has been replicated 227 time(s)
+FlipFlop DoGU/Xout_1 has been replicated 251 time(s)
+FlipFlop DoGU/Xout_2 has been replicated 82 time(s)
+FlipFlop DoGU/Xout_3 has been replicated 11 time(s)
+FlipFlop DoGU/Xout_4 has been replicated 5 time(s)
+FlipFlop DoGU/Xout_5 has been replicated 3 time(s)
+FlipFlop DoGU/Xout_6 has been replicated 1 time(s)
+FlipFlop DoGU/Xout_7 has been replicated 1 time(s)
+FlipFlop ExtremaPM/row1_0 has been replicated 2 time(s)
+FlipFlop ExtremaPM/row1_1 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 18572
+ Flip-Flops                                            : 18572
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : KeypointTop.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 44703
+#      GND                         : 4
+#      INV                         : 14
+#      LUT1                        : 22
+#      LUT2                        : 317
+#      LUT3                        : 500
+#      LUT4                        : 17701
+#      LUT5                        : 225
+#      LUT6                        : 15488
+#      MUXCY                       : 527
+#      MUXF7                       : 6638
+#      MUXF8                       : 2856
+#      VCC                         : 4
+#      XORCY                       : 407
+# FlipFlops/Latches                : 18572
+#      FDC                         : 1220
+#      FDCE                        : 17262
+#      FDPE                        : 90
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 155
+#      IBUF                        : 1
+#      OBUF                        : 154
+# Others                           : 48
+#      RAMB36E1                    : 48
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx100tfgg484-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:           18572  out of  126576    14%  
+ Number of Slice LUTs:                34267  out of  63288    54%  
+    Number used as Logic:             34267  out of  63288    54%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  34693
+   Number with an unused Flip Flop:   16121  out of  34693    46%  
+   Number with an unused LUT:           426  out of  34693     1%  
+   Number of fully used LUT-FF pairs: 18146  out of  34693    52%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                         156
+ Number of bonded IOBs:                 156  out of    296    52%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               48  out of    268    17%  
+    Number using Block RAM only:         48
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 18572 |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 7.576ns (Maximum Frequency: 131.998MHz)
+   Minimum input arrival time before clock: 9.342ns
+   Maximum output required time after clock: 5.006ns
+   Maximum combinational path delay: 0.000ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.576ns (frequency: 131.998MHz)
+  Total number of paths / destination ports: 677498 / 35924
+-------------------------------------------------------------------------
+Delay:               7.576ns (Levels of Logic = 6)
+  Source:            DoGU/Xout_0_141 (FF)
+  Destination:       ExtremaPM/DoG_1_2_10 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: DoGU/Xout_0_141 to ExtremaPM/DoG_1_2_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             17   0.525   1.485  DoGU/Xout_0_141 (DoGU/Xout_0_141)
+     LUT4:I0->O           29   0.254   1.469  ExtremaPM/Madd_Xin[7]_GND_11_o_add_256_OUT_xor<3>11_3 (ExtremaPM/Madd_Xin[7]_GND_11_o_add_256_OUT_xor<3>112)
+     MUXF8:S->O            1   0.202   0.958  ExtremaPM/Mmux_Xin[7]_X_5_o_wide_mux_527_OUT_12_f8_1 (ExtremaPM/Mmux_Xin[7]_X_5_o_wide_mux_527_OUT_12_f82)
+     LUT6:I2->O            2   0.254   1.002  ExtremaPM/Mmux_Xin[7]_X_5_o_wide_mux_527_OUT_7 (ExtremaPM/Mmux_Xin[7]_X_5_o_wide_mux_527_OUT_7)
+     LUT6:I2->O            1   0.254   0.000  ExtremaPM/Mmux_GND_11_o_row1[2]_mux_2128_OUT1_SW0_F (N2350)
+     MUXF7:I0->O           1   0.163   0.682  ExtremaPM/Mmux_GND_11_o_row1[2]_mux_2128_OUT1_SW0 (N532)
+     LUT6:I5->O            1   0.254   0.000  ExtremaPM/Mmux_GND_11_o_row1[2]_mux_2128_OUT1 (ExtremaPM/GND_11_o_row1[2]_mux_2128_OUT<0>)
+     FDC:D                     0.074          ExtremaPM/DoG_1_2_0
+    ----------------------------------------
+    Total                      7.576ns (1.980ns logic, 5.596ns route)
+                                       (26.1% logic, 73.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 18684 / 18676
+-------------------------------------------------------------------------
+Offset:              9.342ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       Addr/x_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to Addr/x_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          18572   1.328   7.555  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.459          Addr/Xout_0
+    ----------------------------------------
+    Total                      9.342ns (1.787ns logic, 7.555ns route)
+                                       (19.1% logic, 80.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1434 / 1434
+-------------------------------------------------------------------------
+Offset:              5.006ns (Levels of Logic = 1)
+  Source:            ExtremaPM/DoG_2_2_16 (FF)
+  Destination:       DoG_2_2<16> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: ExtremaPM/DoG_2_2_16 to DoG_2_2<16>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             35   0.525   1.569  ExtremaPM/DoG_2_2_16 (ExtremaPM/DoG_2_2_16)
+     OBUF:I->O                 2.912          DoG_2_2_16_OBUF (DoG_2_2<16>)
+    ----------------------------------------
+    Total                      5.006ns (3.437ns logic, 1.569ns route)
+                                       (68.7% logic, 31.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 48 / 48
+-------------------------------------------------------------------------
+Delay:               0.000ns (Levels of Logic = 0)
+  Source:            ImageRAM3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA (PAD)
+  Destination:       ImageRAM3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T:CASCADEINA (PAD)
+
+  Data Path: ImageRAM3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA to ImageRAM3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T:CASCADEINA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    RAMB36E1:CASCADEOUTA    0   0.000   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/cascadelata_tmp)
+    RAMB36E1:CASCADEINA        0.000          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.576|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 529.00 secs
+Total CPU time to Xst completion: 529.57 secs
+ 
+--> 
+
+Total memory usage is 636580 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  123 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
